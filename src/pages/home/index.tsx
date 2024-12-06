@@ -1,9 +1,10 @@
-import BaseLayout from "@/component/layouts/BaseLayout/BaseLayout";
-import Home from "@/component/pages/Home";
 import Head from "next/head";
 import React, { Fragment, ReactElement } from "react";
 
-function index() {
+import BaseLayout from "@/component/layouts/BaseLayout/BaseLayout";
+import Home from "@/component/pages/Home";
+
+export const index = () => {
   return (
     <Fragment>
       <Head>
@@ -15,9 +16,7 @@ function index() {
       <Home />
     </Fragment>
   );
-}
-
-export default index;
+};
 
 index.getLayout = function (Page: ReactElement) {
   return <BaseLayout title="Trang chủ">{Page}</BaseLayout>;
