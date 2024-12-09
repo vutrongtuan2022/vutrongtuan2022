@@ -1,9 +1,9 @@
+import Head from "next/head";
+import { Fragment, ReactElement } from "react";
 import BaseLayout from "@/component/layouts/BaseLayout/BaseLayout";
 import MainPageUser from "@/component/pages/user/MainPageUser";
-import Head from "next/head";
-import React, { Fragment, ReactElement } from "react";
 
-function Page() {
+export default function Page() {
   return (
     <Fragment>
       <Head>
@@ -16,8 +16,6 @@ function Page() {
     </Fragment>
   );
 }
-
-export default Page;
 
 Page.getLayout = function (Page: ReactElement) {
   return <BaseLayout title="Nhân viên">{Page}</BaseLayout>;

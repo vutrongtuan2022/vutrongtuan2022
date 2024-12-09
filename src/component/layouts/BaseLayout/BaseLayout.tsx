@@ -11,7 +11,7 @@ function BaseLayout({ children, title }: PropsBaseLayout) {
   return (
     <ContextBaseLayout.Provider value={{ showFull, setShowFull }}>
       <div>
-        <Header />
+        <Header title={title} />
         <main>{children}</main>
         <Footer />
       </div>

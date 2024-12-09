@@ -1,3 +1,4 @@
+export enum QUERY_KEY {}
 export enum TYPE_DATE {
   ALL = -1,
   TODAY = 1,
